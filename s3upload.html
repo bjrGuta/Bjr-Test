@@ -21,13 +21,17 @@
 					
 				var params = { Key: file.name, ContentType: file.type, Body: file, ServerSideEncryption: 'AES256' };
 
+				$('#loading').show();
+
 				bucket.putObject(params, function(err, data) {
 				    if(err) {
 				    	console.log("ERRRRORRRRR" + err.message,err.code);
 				        return false;
 				    }else{
 				    	console.log("File OK");
+				    	$('#loading').show();
 				    	$('#s3img').html('<img src="' + bucket_url + file.name + '">');
+				    	$('#s3img').show();
 					}
 				});
 
@@ -40,6 +44,7 @@
 		<input type="file" id="files" name="files[]" multiple />
 		<output id="list"></output>
 		<br />
-		<div id="s3img"></div>
+		<div id="s3img" style="display:none"></div>
+		<img src="ajax-loading.gif" id="loading" style="display:none">
 	</body>
 </html>

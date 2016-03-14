@@ -11,7 +11,7 @@
 			    secret_key: 'wQH1tJ1v7eWQcMViA4j9GKgMdpLX7r7P3BXcDad5'
 			};
 			
-			var bucket_url = 'https://s3-eu-west-1.amazonaws.com/' + creds.bucket;
+			var bucket_url = 'https://s3-eu-west-1.amazonaws.com/' + creds.bucket + '/';
 
 			function handleFileSelect(evt){
 				AWS.config.update({ accessKeyId: creds.access_key, secretAccessKey: creds.secret_key });

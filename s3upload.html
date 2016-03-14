@@ -29,7 +29,7 @@
 				        return false;
 				    }else{
 				    	console.log("File OK");
-				    	$('#loading').show();
+				    	$('#loading').hide();
 				    	$('#s3img').html('<img src="' + bucket_url + file.name + '">');
 				    	$('#s3img').show();
 					}
@@ -45,6 +45,6 @@
 		<output id="list"></output>
 		<br />
 		<div id="s3img" style="display:none"></div>
-		<img src="ajax-loading.gif" id="loading" style="display:none">
+		<img src="ajax-loader.gif" id="loading" style="display:none">
 	</body>
 </html>

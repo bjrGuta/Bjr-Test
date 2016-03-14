@@ -1,0 +1,8 @@
+<div id="content-langs" data-template-id="langs">	
+	<h2 class="text-center" data-localize="choose-lang"></h2>
+	<div id="btn-langs" class="text-center">		
+    {{#template.langs}}
+		<button type="button" id="btn-lang-{{code}}" class="btn-lang btn btn-lg btn-primary" data-index="{{index}}" data-lang="{{code}}">{{name}}</button>
+    {{/template.langs}}
+	</div>
+</div>

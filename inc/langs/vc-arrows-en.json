@@ -1,0 +1,15 @@
+{
+	"yes" : "Yes",
+	"no" : "No",
+	"choose-lang" : "Choose your language.",
+	"legal-age-title" : "Have you the required legal age ?",
+	"legal-age-text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin arcu et felis tristique, a tincidunt sapien rhoncus.",
+	"intro-title" : "Welcome",
+	"intro-text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin arcu et felis tristique, a tincidunt sapien rhoncus. Phasellus eu aliquet nisi. Nam eget ipsum tellus. Integer nec tincidunt tellus. Phasellus eget mauris et nunc pulvinar pellentesque. Maecenas sed ex vel ipsum consequat convallis. Suspendisse sit amet arcu eget metus porttitor fringilla sit amet a lacus.",
+	"intro-btn-launch" : "Launch",
+	"friend-name-label" : "Name",
+	"friend-country-label" : "Country",
+	"friend-city-label" : "City",
+	"friend-btn-label" : "Calculate",
+	"friends-send-label" : "Send friends data"
+}

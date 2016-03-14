@@ -1,0 +1,42 @@
+{
+	"title" : "Veuve Clicquot Arrows",
+	"container" : "#main",	
+	"langs" : [
+		{
+			"code" : "EN",
+			"name" : "English"
+		},
+		{
+			"code" : "FR",
+			"name" : "Français"
+		},
+		{
+			"code" : "ES",
+			"name" : "Español"
+		},
+		{
+			"code" : "DE",
+			"name" : "Deutsch"
+		},
+		{
+			"code" : "ZH",
+			"name" : "Chinese"
+		}
+	],
+	"localize" : {
+		"index" : 0,
+		"language" : "EN",
+		"pathPrefix" : "inc/langs"
+	},
+	"geocoder" : {
+		"api" : {
+			"key" : "AIzaSyBG15LTT7647-ckyScIQDSCOCXACjRVlF8"
+		},
+		"local" : {
+			"country" : "FR",
+			"city" : "Paris",
+			"lat" : 48.856614,
+			"lng" : 2.3522219000000177
+		}
+	}
+}

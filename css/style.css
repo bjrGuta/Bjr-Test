@@ -1,0 +1,39 @@
+/* GENERAL */
+html, body {
+	width: 100%;
+	height: 100%;
+	padding-bottom : 70px;
+	background-color: #fff;
+}
+
+#wrongOrientation {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 9000;
+	display: table;
+	text-align: center;
+	background-color: #fff;
+}
+
+#wrongOrientation > h2 {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* HEADER */
+.page-header {
+	margin-bottom: 10%;
+}
+
+/* FOOTER */
+.navbar-fixed-bottom {
+	z-index: 5000;
+}
+
+/* STYLES */
+#record-container {
+	margin-top: 5%;
+}

@@ -1,0 +1,46 @@
+<div id="crm" class="" data-template-id="crm">
+	<form>
+
+		<div class="row">
+		  	<div class="form-group col-xs-6">
+		    	<label for="user-fname">First name</label>
+		    	<input type="text" class="form-control" id="user-fname" placeholder="First name" value="{{template.fname}}">
+		    </div>
+		  	<div class="form-group col-xs-6">
+		    	<label for="user-lname">Last name</label>
+		    	<input type="text" class="form-control" id="user-lname" placeholder="Last name" value="{{template.lname}}">
+		    </div>
+		</div>
+
+		<select id="user-country" class="form-control">
+		  	<option value="">Country</option>
+    		{{#template.countries}}
+		  	<option value="{{code}}">{{name}}</option>
+    		{{/template.countries}}
+		</select>
+
+		<div class="row">
+		  	<div class="form-group col-xs-12">
+		    	<label for="user-email">Email address</label>
+		    	<input type="email" class="form-control" id="user-email" placeholder="Email" value="{{template.email}}">
+			</div>
+		</div>
+
+		<div class="checkbox">
+		  <label>
+		    <input type="checkbox" id="user-newsletter" value="">
+		    Subscribe to our newsletter.
+		  </label>
+		</div>
+
+		<div class="checkbox">
+		  <label>
+		    <input type="checkbox" id="user-public" value="">
+		    Make your video publicly avilable.
+		  </label>
+		</div>
+
+	  </div>
+	  <button id="crm-submit-btn" type="submit" class="btn btn-block btn-lg btn-primary">Submit</button>
+	</form>	
+</div>

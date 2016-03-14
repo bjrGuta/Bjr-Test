@@ -1,0 +1,25 @@
+<div id="content-friends" data-template-id="friends">
+
+	<form class="form-inline">
+		{{#template.friends}}
+		<div id="friend-{{id}}" class="friend-form text-center">
+			<fieldset {{disabled}}>
+		  		<div class="form-group">
+			    	<input type="text" name="name" class="form-control friend-name" data-localize="friend-name-label">
+		  			<select  class="form-control friend-country">
+			    		<option class="choose-country sim-placeholder" value="" data-localize="friend-country-label"></option>
+			    		{{#countries}}
+							<option class="country" value="{{code}}" data-localize="{{code}}"></option>
+			    		{{/countries}}
+			    	</select>
+			    	<input name="city" type="text" class="form-control friend-city" data-localize="friend-city-label">
+					<button type="button" class="btn btn-default" data-localize="friend-btn-label"></button>
+			    </div>
+			</fieldset>
+		</div>
+		{{/template.friends}}
+
+		<button type="button" class="friends-start btn btn-lg btn-primary center-block" disabled="{{disabled}}" data-localize="friends-send-label"></button>
+
+	</form>
+</div>

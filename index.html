@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html manifest="offline.appcache">
+
+<head>
+	
+	<title>VEUVE CLICQUOT - Arrows - Pilote</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />   
+    
+    <!-- STYLESHEETS -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+	<div id="main" class="container-fluid"></div>
+
+    <!-- JAVASCRIPT -->
+
+    <!-- jQuery -->
+	<script src="lib/jquery-min.js"></script>
+	<script src="lib/jquery.localize.min.js"></script>
+
+    <!-- BackboneJS -->
+	<script src="lib/underscore-min.js"></script>
+	<script src="lib/backbone-min.js"></script>
+	<script src="lib/backbone.routefilter.min.js"></script>
+	<script src="lib/backbone.localStorage-min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Mustache -->
+    <!-- Application templates (Mustache needs the templates to be loaded before) -->
+	<script src="inc/templates/tplLoader.js"></script>
+	<script src="lib/mustache.js"></script>
+    
+    <!-- Application main scripts -->
+	<script src="inc/app.js"></script>
+	<script src="inc/helpers.js"></script>
+	<script src="data/countries.js"></script>
+	<script src="inc/router.js"></script>
+
+	<!-- Application views -->
+	<script src="inc/views/LangsView.js"></script>
+	<script src="inc/views/LegalView.js"></script>
+	<script src="inc/views/IntroView.js"></script>
+	<script src="inc/views/FriendsView.js"></script>
+	<script src="inc/views/CamView.js"></script>
+	<script src="inc/views/ReviewView.js"></script>
+	<script src="inc/views/CrmView.js"></script>
+	<script src="inc/views/HeaderView.js"></script>
+	<script src="inc/views/FooterView.js"></script>
+	<script src="inc/views/PopupView.js"></script>
+
+	<!-- Application models -->
+	<script src="inc/models/MainModel.js"></script>	
+
+</body>
+
+</html>

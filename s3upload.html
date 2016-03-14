@@ -13,7 +13,7 @@
 			};
 			function handleFileSelect(evt){
 				AWS.config.update({ accessKeyId: creds.access_key, secretAccessKey: creds.secret_key });
-				AWS.config.region = 'eºu-west-1';
+				AWS.config.region = 'eu-west-1';
 				var bucket = new AWS.S3({ params: { Bucket: creds.bucket } });
 				var file = evt.target.files[0];
 					

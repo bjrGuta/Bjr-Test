@@ -11,7 +11,7 @@
 			    secret_key: 'wQH1tJ1v7eWQcMViA4j9GKgMdpLX7r7P3BXcDad5'
 			};
 			
-			var bucket_url = creds.bucket + '.eu-west-1.amazonaws.com/';
+			var bucket_url = 'https://s3-eu-west-1.amazonaws.com/' + creds.bucket;
 
 			function handleFileSelect(evt){
 				AWS.config.update({ accessKeyId: creds.access_key, secretAccessKey: creds.secret_key });
@@ -27,7 +27,7 @@
 				        return false;
 				    }else{
 				    	console.log("File OK");
-				    	$('#s3img').html('<img src="' + bucket_url + file.name + '">');
+				    	$('#s3img').html('<img src="https://' + bucket_url + file.name + '">');
 					}
 				});
 

@@ -2,7 +2,7 @@
 
 $dtb = new Database("bonjour1","bonjour-test.cdi0xcvkc5hp.eu-west-1.rds.amazonaws.com","root","bjr60074","test");
 
-$data = $dtb.select();
+$data = $dtb->select();
 
 $json = json_encode($data);
 echo isset($_GET['callback'])
